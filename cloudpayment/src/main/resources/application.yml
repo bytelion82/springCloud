@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: cloudConsume-payment-service
+    name: cloud-payment-service
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -15,9 +15,9 @@ spring:
 
 # mybatis
 mybatis-plus:
-  mapper-locations: classpath:org/springblade/**/mapper/*Mapper.xml
+  mapper-locations: classpath:mapper/*Mapper.xml
   #实体扫描，多个package用逗号或者分号分隔
-  typeAliasesPackage: com.craylion.**.entity
+  typeAliasesPackage: com.crazy.**.entity
   #typeEnumsPackage: org.springblade.dashboard.entity.enums
   global-config:
     # 关闭MP3.0自带的banner

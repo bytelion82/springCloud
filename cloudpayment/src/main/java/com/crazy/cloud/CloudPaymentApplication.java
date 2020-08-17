@@ -1,4 +1,4 @@
-package com.crazylion.cloudConsume;
+package com.crazy.cloud;
 
 
 import org.springframework.boot.SpringApplication;

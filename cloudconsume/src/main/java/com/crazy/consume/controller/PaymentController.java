@@ -1,6 +1,6 @@
 package com.crazy.consume.controller;
 
-import com.crazy.common.entity.CommonResult;
+import com.crazy.cloud.entity.CommonResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

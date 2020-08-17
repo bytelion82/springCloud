@@ -1,4 +1,4 @@
-package com.crazy.common.entity;
+package com.crazy.cloud.entity;
 
 
 import lombok.AllArgsConstructor;

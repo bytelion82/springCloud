@@ -1,4 +1,4 @@
-package com.crazylion.cloudConsume.entity;
+package com.crazy.cloud.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
