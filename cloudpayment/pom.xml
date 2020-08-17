@@ -13,20 +13,8 @@
 
     <dependencies>
         <!--包含了sleuth+zipkin-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-zipkin</artifactId>-->
-<!--        </dependency>-->
-        <!--eureka-client-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
-<!--        </dependency>-->
-        <dependency>
-            <groupId>com.crazylion</groupId>
-            <artifactId>commons</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -80,6 +68,8 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-pool2</artifactId>
         </dependency>
+
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

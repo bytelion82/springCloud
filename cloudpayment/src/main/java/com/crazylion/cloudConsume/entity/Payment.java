@@ -1,4 +1,4 @@
-package com.crazylion.springcloud.entity;
+package com.crazylion.cloudConsume.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,6 +6,9 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
+/**
+ * @author de'l'l
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
