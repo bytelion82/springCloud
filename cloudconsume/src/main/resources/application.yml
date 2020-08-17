@@ -1,5 +1,5 @@
 server:
-  port: 1112
+  port: 80
 
 spring:
   application:
@@ -9,5 +9,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      #单机版,提供eureka服务的主机地址,容易单点故障，需要集群
-      defaultZone: http://localhost:1113/eureka
+      #单机版,提供eureka服务的主机地址
+      #      defaultZone: http://localhost:7001/eureka
+      # 集群版
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
