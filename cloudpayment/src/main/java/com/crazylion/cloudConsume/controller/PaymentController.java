@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PaymentController {
 
-    @GetMapping("Hello")
+    @GetMapping("/hello")
     public CommonResult hello(){
-        return new CommonResult(200,"success",null);
+        return new CommonResult(200,"payment",null);
     }
 }
