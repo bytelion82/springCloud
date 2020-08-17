@@ -1,2 +1,13 @@
 server:
   port: 1112
+
+spring:
+  application:
+    name: cloud-order-service   #以该名字入住eureka
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      #单机版,提供eureka服务的主机地址,容易单点故障，需要集群
+      defaultZone: http://localhost:1113/eureka

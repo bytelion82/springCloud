@@ -13,10 +13,9 @@
 
     <modules>
         <module>cloudpayment</module>
-
-        <module>cloudclient</module>
         <module>cloudconsume</module>
         <module>common-api-entity</module>
+        <module>cloud-eureka-server</module>
     </modules>
 
 
