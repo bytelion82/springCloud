@@ -12,7 +12,7 @@
     <artifactId>cloudconsume</artifactId>
 
     <dependencies>
-<!--        引入eureka-->
+<!--        引入eureka 他已经整合了ribbon  ，可以自动使用它的负载均衡-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
