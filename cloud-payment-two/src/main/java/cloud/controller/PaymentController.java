@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.concurrent.TimeUnit;
+
 @Slf4j
 @RestController
 public class PaymentController {
@@ -49,5 +51,17 @@ public class PaymentController {
             return new CommonResult(200,"serverPort:"+serverPort,null);
         }
         return new CommonResult(200,"serverPort:"+serverPort,1);
+    }
+
+    @GetMapping("/payment/feign/timeout")
+    public String OpenfeignSleep(){
+        log.info("openfeign");
+
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return serverPort;
     }
 }

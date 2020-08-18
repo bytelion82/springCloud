@@ -27,4 +27,13 @@ public class OrderFeignController {
     }
 
 
+    @GetMapping(value = "/consumer/payment/feign/timeout")
+    public String paymentFeignTimeout()
+    {
+        // OpenFeign客户端一般默认等待1秒钟
+        String timeout = orderFeignService.paymentFeignTimeout();
+        System.out.println(timeout);
+        return timeout;
+    }
+
 }
