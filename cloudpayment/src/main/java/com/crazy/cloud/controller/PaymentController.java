@@ -5,7 +5,10 @@ package com.crazy.cloud.controller;
 import com.crazy.cloud.entity.CommonResult;
 import com.crazy.cloud.entity.Payment;
 import com.crazy.cloud.service.IPaymentService;
+import com.mysql.jdbc.TimeUtil;
+import io.micrometer.core.instrument.util.TimeUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.tomcat.jni.Time;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
@@ -72,5 +75,12 @@ public class PaymentController {
         List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PAYMENT-SERVICE");
         instances.forEach(instance->log.info("instance uri:"+instance.getUri()));
         return this.discoveryClient;
+    }
+
+
+    @GetMapping("/payment/feign/timeout")
+    public String OpenfeignSleep(){
+        Time.sleep(3000);
+        return serverPort;
     }
 }

@@ -20,6 +20,7 @@
         <module>cloud-payment-two</module>
         <module>cloud-zookeeper-payment</module>
         <module>cloud-zookeeper-consumer</module>
+        <module>cloud-crazy-openFeign-order</module>
     </modules>
 
 
