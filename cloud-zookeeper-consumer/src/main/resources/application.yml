@@ -1,0 +1,10 @@
+server:
+  port: 90
+
+spring:
+  application:
+    name: cloud-consumer-order
+  cloud:
+    #注册到zookeeper地址
+    zookeeper:
+      connect-string: 39.98.137.182:2181

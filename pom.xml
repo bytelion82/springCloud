@@ -18,6 +18,8 @@
         <module>cloud-eureka-server</module>
         <module>cloud-eureka-server-two</module>
         <module>cloud-payment-two</module>
+        <module>cloud-zookeeper-payment</module>
+        <module>cloud-zookeeper-consumer</module>
     </modules>
 
 

@@ -61,10 +61,10 @@ public class PaymentController {
     }
 
     /**
-     * 通过@EnableDiscovery 注解，得到discoveryclient 可以指定微服务的相关信息
+     * Through the @EnableDiscovery annotation, the discoveryclient can specify the relevant information of the microservice
      * @return
      */
-    @GetMapping("payment/discovery")
+    @GetMapping("cloud/payment/discovery")
     public Object getDiscovery(){
         List<String> services = discoveryClient.getServices();
         services.forEach(element ->log.info("element:"+element));
